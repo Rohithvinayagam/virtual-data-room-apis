@@ -3,10 +3,8 @@ const { v4: uuid } = require('uuid')
 const validationOtp = require('./validateOtp')
 const mysql = require("mysql")
 const bodyParser = require('body-parser')
-
 const login=require('./login.js')
 const generateOtp = require('./generateOtp.js')
-
 const app = express()
 
 
