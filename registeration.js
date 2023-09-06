@@ -3,13 +3,11 @@ const { v4: uuid } = require('uuid')
 const validationOtp = require('./validateOtp')
 const mysql = require("mysql")
 const bodyParser = require('body-parser')
-const table = require("./task/tables.js")
 const login=require('./login.js')
 const generateOtp = require('./generateOtp.js')
-
 const app = express()
 
-app.use('/', table)
+
 app.use('/login', login)
 app.use('/validateOtp', validationOtp)
 
